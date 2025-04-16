@@ -16,6 +16,19 @@
       border-radius: 6px;
       max-height: 300px;
       overflow-y: auto;
+      }
+    .round {
+      border-radius: 50px;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      }
+    .red {
+      background-color: red;
+    }
+    .green {
+      background-color: green;
     }
   </style>
 </head>
@@ -28,6 +41,8 @@
   <button onclick="send('>B0')">버저 OFF</button>
   <button onclick="send('>R1')">릴레이 ON</button>
   <button onclick="send('>R0')">릴레이 OFF</button>
+  <button class="round red" onclick="send('>M11')">Melody1 ON</button>
+  <button class="round green" onclick="send('>M10')">Melody1 OFF</button>
 
   <div id="log"></div>
 
